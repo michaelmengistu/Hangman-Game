@@ -130,7 +130,7 @@ def hangman(secretWord):
         board = getGuessedWord(secretWord,guessList)
         newFill = 0
         for i in board:
-            if i is not '_':
+            if i != '_':
                 if filled == 0:
                     filled += 1
                 else:
